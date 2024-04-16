@@ -14,7 +14,7 @@ import static java.time.temporal.ChronoUnit.HOURS;
 public class TaskController {
 
     @GetMapping("/schedule-carbon-aware-task")
-    public void getAllTasks(@RequestParam String message, @RequestParam int hoursAheadDeadline) {
+    public void createNewTask(@RequestParam String message, @RequestParam int hoursAheadDeadline) {
         BackgroundJob.scheduleCarbonAware(CarbonAwarePeriod.before(Instant.now().plus(hoursAheadDeadline, HOURS)),
                 () -> System.out.println("Carbon Aware Task: " + message));
     }
