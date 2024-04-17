@@ -18,4 +18,10 @@ public class TaskController {
         BackgroundJob.scheduleCarbonAware(CarbonAwarePeriod.before(Instant.now().plus(hoursAheadDeadline, HOURS)),
                 () -> System.out.println("Carbon Aware Task: " + message));
     }
+
+    @GetMapping("/schedule-carbon-aware-task-between")
+    public void createNewTaskBetween(@RequestParam String message, @RequestParam int startHoursAhead, @RequestParam int endHoursAhead) {
+        BackgroundJob.scheduleCarbonAware(CarbonAwarePeriod.between(Instant.now().plus(startHoursAhead, HOURS), Instant.now().plus(endHoursAhead, HOURS)),
+                () -> System.out.println("Carbon Aware Task: " + message));
+    }
 }
