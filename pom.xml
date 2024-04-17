@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>org.jobrunr.test</groupId>
 	<artifactId>carbon-aware</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1.0</version>
 	<name>carbon-aware</name>
 	<description>A Demo project that showcases carbon-aware scheduling in Jobrunr</description>
 	<properties>
