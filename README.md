@@ -13,7 +13,7 @@ A demo Spring boot app that tests JobRunr's carbon-aware-scheduling feature
 
 ## How to run the demo app
 
-`./mvn spring-boot:run`
+`mvn spring-boot:run`
 
 ## How to test the carbon-aware-scheduling feature
 
