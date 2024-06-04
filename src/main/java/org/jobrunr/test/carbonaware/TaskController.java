@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.time.Instant;
+import java.util.UUID;
 
 import static java.time.temporal.ChronoUnit.HOURS;
 
@@ -22,7 +23,7 @@ public class TaskController {
 
     @GetMapping("/create-carbon-aware-recurring-job-daily-between")
     public void createNewTaskBetween(@RequestParam int allowedHourToStart, @RequestParam int allowedHourToEnd) {
-        BackgroundJob.scheduleRecurrently(CarbonAwareCron.dailyBetween(allowedHourToStart, allowedHourToEnd),
+        BackgroundJob.scheduleRecurrently(UUID.randomUUID().toString(), CarbonAwareCron.dailyBetween(allowedHourToStart, allowedHourToEnd),
                 () -> System.out.println("Carbon Aware Recurring Task between " + allowedHourToStart + " and " + allowedHourToEnd));
     }
 }
