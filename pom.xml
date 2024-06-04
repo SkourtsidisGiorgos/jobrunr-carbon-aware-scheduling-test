@@ -15,7 +15,7 @@
 	<description>A Demo project that showcases carbon-aware scheduling in Jobrunr</description>
 	<properties>
 		<java.version>21</java.version>
-		<jobrunr.version>7.0.0-carbon-aware</jobrunr.version>
+		<jobrunr.version>7.2.0-carbon-aware</jobrunr.version>
 		<springdoc-openapi.version>2.5.0</springdoc-openapi.version>
 	</properties>
 	<dependencies>

@@ -7,7 +7,7 @@ A demo Spring boot app that tests JobRunr's carbon-aware-scheduling feature
 1. Clone JobRunr OSS repository
 2. Checkout `feature/carbon-aware-jobs` branch
 3. In class `CarbonAwareConfiguration`, change the `DEFAULT_CARBON_AWARE_API_URL` constant to `http://jobrunr-carbon-api-dev.swedencentral.cloudapp.azure.com:10000` 
-4. `export DRONE_TAG=v7.0.0-carbon-aware`
+4. `export DRONE_TAG=v7.2.0-carbon-aware`
 5. `./gradlew publishToMavenLocal`
 
 
