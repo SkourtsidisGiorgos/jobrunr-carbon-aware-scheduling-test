@@ -1,4 +1,4 @@
-package org.jobrunr.test.carbonaware;
+package org.jobrunr.test.carbonawaredemo;
 
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

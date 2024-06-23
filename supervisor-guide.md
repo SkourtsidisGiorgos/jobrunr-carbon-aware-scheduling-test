@@ -23,7 +23,7 @@ redirect_stderr=true
 stdout_logfile=/home/$USER/carbon-aware-app-spboot/logs/carbon-aware-app.log
 stdout_logfile_maxbytes=1MB
 stdout_logfile_backups=10
-stderr_logfile=/home/$USER>/carbon-aware-app-spboot/logs/carbon-aware-app.err
+stderr_logfile=/home/$USER/carbon-aware-app-spboot/logs/carbon-aware-app.err
 stderr_logfile_maxbytes=1MB
 stderr_logfile_backups=10
 ```
